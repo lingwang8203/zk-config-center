@@ -7,9 +7,21 @@
     <groupId>com.ling.client</groupId>
     <artifactId>config-center</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <properties>
-        <curator.version>4.0.0</curator.version>
+        <curator.version>2.11.1</curator.version>
         <slf4j.version>1.7.28</slf4j.version>
         <slf4j-api.version>1.7.28</slf4j-api.version>
 
